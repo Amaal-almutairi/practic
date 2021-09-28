@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="83dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="Name"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="Location"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/Text1"
+        app:layout_constraintTop_toBottomOf="@+id/Text1" />
+
+    <EditText
+        android:id="@+id/Text3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="Mobile"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/Text2"
+        app:layout_constraintStart_toStartOf="@+id/Text2"
+        app:layout_constraintTop_toBottomOf="@+id/Text2" />
+
+    <Button
+        android:id="@+id/bl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Tv"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bm"
+        app:layout_constraintEnd_toStartOf="@+id/bm"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="Go"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bm" />
+
+    <Button
+        android:id="@+id/bm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="11dp"
+        android:text="toa"
+        app:layout_constraintEnd_toStartOf="@+id/bn"
+        app:layout_constraintStart_toEndOf="@+id/bl"
+        app:layout_constraintTop_toBottomOf="@+id/Text3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="57dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/bm"
+        app:layout_constraintTop_toBottomOf="@+id/bm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
